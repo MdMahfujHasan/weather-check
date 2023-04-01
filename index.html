@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Check</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6c0e978889.js" crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="input-city-name" type="text" class="form-control"
+                    placeholder="Enter a city name for weather...">
+                <div class="input-group-append">
+                    <button id="btn-search" type="button" class="text-white bg-rose-500 px-3 rounded">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h5 id="city-name" class="text-2xl font-medium"></h5>
+            <h1><span id="temperature" class="text-7xl font-bold"></span><span id="degC"
+                    class="hidden text-3xl">&deg;C</span>
+            </h1>
+            <h4 id="condition" class="text-3xl font-medium"></h4>
+            <h6 class="font-base">
+                <i id="up-arrow" class="fa-solid fa-arrow-up hidden"></i> <span id="temp-min" class="mr-3"></span>
+                <i id="down-arrow" class="fa-solid fa-arrow-down hidden"></i> <span id="temp-max"></span>
+            </h6>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
